@@ -2,14 +2,57 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: tomato;
 }
 
-.box {
+.navbar {
   display: flex;
-  background-color: aquamarine;
-  width: 200px;
-  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: mediumseagreen;
+  border: 2px solid black;
 }
 
+.hero {
+  background-color: mediumorchid;
+  border: 2px solid black;
+}
 
+.partners {
+  background-color: olivedrab;
+  border: 2px solid black;
+}
+
+.features {
+  background-color: navajowhite;
+  border: 2px solid black;
+}
+
+.social {
+  background-color: mediumturquoise;
+  border: 2px solid black;
+  &--card {
+    display: flex;
+    &__user {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.faq {
+  background-color: plum;
+  border: 2px solid black;
+}
+
+.story {
+  background-color: honeydew;
+  border: 2px solid black;
+}
+
+.footer {
+  text-align: center;
+
+  background-color: tomato;
+  border: 2px solid black;
+}
