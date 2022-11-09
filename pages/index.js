@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
 
-const Home = () => {
+export default function Home() {
 	const boxRef = useRef(null);
 
 	useEffect(() => {
@@ -18,6 +18,4 @@ const Home = () => {
 			</div>
 		</>
 	);
-};
-
-export default Home;
+}
