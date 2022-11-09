@@ -18,7 +18,7 @@ export default function Navbar() {
 						<li>OUR SERVICES</li>
 					</a>
 					<a href='#ftex'>
-						<li>OUR FTEX '22</li>
+						<li>OUR FTEX 22</li>
 					</a>
 				</ul>
 			</nav>
