@@ -37,7 +37,7 @@ export default function Home() {
 			</section>
 
 			{/* OUR STORY */}
-			<section className="story">
+			<section id="story" className="story">
 				<h2>Our Story</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam non aspernatur corrupti sed aliquid inventore possimus laboriosam quae, placeat dolorum nulla consequatur facilis officiis veniam harum vitae necessitatibus in quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non culpa explicabo obcaecati facere, eius, possimus ab reiciendis odio aliquid in eos officiis adipisci animi ipsam soluta voluptatum, reprehenderit iure?</p>
 			</section>
