@@ -1,0 +1,11 @@
+.social__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22vw;
+}
+
+.social__user {
+  display: flex;
+  align-items: center;
+}

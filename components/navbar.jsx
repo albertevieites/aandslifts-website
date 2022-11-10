@@ -9,26 +9,23 @@ export default function Navbar() {
 		<div className='navbar'>
 			<div className='navbar__brand'>
 				<Link href='/'>
-						<Image
-							src={brandLogo}
-							alt="Brand Logo"
-						/>
+					<Image src={brandLogo} alt='Brand Logo' />
 				</Link>
 			</div>
 			<nav className='navbar__nav'>
 				<ul className='navbar__list'>
-					<a href='#story'>
-						<li>OUR STORY</li>
-					</a>
-					<a href='#services'>
-						<li>OUR SERVICES</li>
-					</a>
-					<a href='#ftex'>
-						<li>OUR FTEX 22</li>
-					</a>
+					<li>
+						<a href='#story'> OUR STORY</a>
+					</li>
+					<li>
+						<a href='#services'>OUR SERVICES</a>
+					</li>
+					<li>
+						<a href='#ftex'>FTEX 22</a>
+					</li>
 				</ul>
 			</nav>
-			<Link href='/products'>Our Products</Link>
+			<Link className='products__link' href='/products'>Our Products</Link>
 		</div>
 	);
 }
