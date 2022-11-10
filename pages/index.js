@@ -20,11 +20,13 @@ export default function Home() {
 
 			{/* PARTNERS SECTION */}
 			<section className='partners'>
-				<Image
-					src={nayarLogo}
-					alt="Nayar Logo"
-				/>
-				<span>Exclusive UK Distributors Of Nayar Products</span>
+				<div className="partners__container">
+					<Image
+						src={nayarLogo}
+						alt="Nayar Logo"
+					/>
+					<span>Exclusive UK Distributors Of Nayar Products</span>
+				</div>
 			</section>
 
 			{/* FEATURES & BENEFITS */}
@@ -60,7 +62,7 @@ export default function Home() {
 
 			{/* LAST */}
 			<section className="last">
-				<Link href='/products'>Our Products</Link>
+				<Link className="last__link" href='/products'>Our Products</Link>
 			</section>
 		</>
 	);
