@@ -1,4 +1,10 @@
+import Link from "next/link";
+
+import Image from "next/image";
+import nayarLogo from "../public/icons/nayar.png";
+
 import SocialCard from "../components/socialCard";
+import TeamCard from "../components/teamCard";
 
 export default function Home() {
 	return (
@@ -14,7 +20,11 @@ export default function Home() {
 
 			{/* PARTNERS SECTION */}
 			<section className='partners'>
-				<h2>NAYAR</h2>
+				<Image
+					src={nayarLogo}
+					alt="Nayar Logo"
+				/>
+				<span>Exclusive UK Distributors Of Nayar Products</span>
 			</section>
 
 			{/* FEATURES & BENEFITS */}
@@ -44,12 +54,13 @@ export default function Home() {
 
 			{/* TEAM */}
 			<section className="team">
-
+				<h2>Meet Our Team</h2>
+				<TeamCard />
 			</section>
 
 			{/* LAST */}
 			<section className="last">
-
+				<Link href='/products'>Our Products</Link>
 			</section>
 		</>
 	);

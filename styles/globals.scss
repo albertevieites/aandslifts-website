@@ -19,7 +19,7 @@ body {
 }
 
 .partners {
-  background-color: olivedrab;
+  background-color: aliceblue;
   border: 2px solid black;
 }
 
@@ -31,12 +31,19 @@ body {
 .social {
   background-color: mediumturquoise;
   border: 2px solid black;
-  &--card {
+  &__grid {
     display: flex;
-    &__user {
-      display: flex;
-      align-items: center;
-    }
+    justify-content: center;
+    gap: 1em;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+  }
+  &__user {
+    display: flex;
   }
 }
 
@@ -50,9 +57,31 @@ body {
   border: 2px solid black;
 }
 
+.team {
+  background-color: darkslategray;
+  border: 2px solid black;
+  color: white;
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  &__card {
+    width: 27%;
+  }
+}
+
+.last {
+  background-color: burlywood;
+  border: 2px solid black;
+}
+
 .footer {
   text-align: center;
 
   background-color: tomato;
   border: 2px solid black;
 }
+

@@ -4,20 +4,20 @@ import { socialData } from '../data/social';
 
 export default function SocialCard() {
 	return (
-		<div className='social--card'>
+		<div className='social__grid'>
 			{socialData.map((data, key) => {
 				return (
-					<div key={key}>
-						<p className='social--card__body'>{data.comment}</p>
-						<div className='social--card__user'>
+					<div key={key} className="social__card">
+						<p className='social__body'>{data.comment}</p>
+						<div className='social__user'>
 							<Image
-								className='social--card__image'
+								className='social__image'
 								src={data.img}
 								alt={data.alt}
 								width={50}
 								height={50}
 							/>
-							<h4 className='social--card__name'>{data.name}</h4>
+							<h4 className='social__name'>{data.name}</h4>
 						</div>
 					</div>
 				);

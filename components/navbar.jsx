@@ -1,12 +1,18 @@
 import Link from 'next/link';
 
+import Image from 'next/image';
+import brandLogo from '../public/icons/aands.svg';
+
 export default function Navbar() {
 	return (
 		// NAVBAR
 		<div className='navbar'>
 			<div className='navbar__brand'>
 				<Link href='/'>
-					<h2>A&S</h2>
+						<Image
+							src={brandLogo}
+							alt="Brand Logo"
+						/>
 				</Link>
 			</div>
 			<nav className='navbar__nav'>
