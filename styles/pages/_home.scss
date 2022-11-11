@@ -1,0 +1,114 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+.hero {
+	padding: 5em 2em;
+	background-color: mediumorchid;
+
+	border: 2px solid black;
+
+  h1{
+    padding-bottom: 1em;
+    font-size: $f-s-800;
+    font-weight: $f-w-600;
+  }
+
+  p {
+    padding-bottom: 2em;
+  }
+
+	span {
+		color: $clr-goldweb;
+	}
+  &__link {
+    width: 8em;
+
+    text-align: center;
+    
+    border: 2px solid black;
+  }
+}
+
+.partners {
+	display: flex;
+	justify-content: center;
+
+	padding: 1em 0;
+	background-color: aliceblue;
+
+	border: 2px solid black;
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 2em;
+	}
+}
+
+.features {
+	padding: 5em 2em;
+	background-color: navajowhite;
+
+	border: 2px solid black;
+}
+
+.social {
+	padding: 5em 2em;
+	background-color: mediumturquoise;
+
+	border: 2px solid black;
+
+	h2 {
+		margin-bottom: 2em;
+	}
+	&__grid {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+	}
+}
+
+.faq {
+	padding: 5em 2em;
+	background-color: plum;
+
+	border: 2px solid black;
+}
+
+.story {
+	padding: 5em 2em;
+	background-color: honeydew;
+
+	border: 2px solid black;
+}
+
+.team {
+	padding: 5em 2em;
+	background-color: darkslategray;
+
+	border: 2px solid black;
+
+	color: white;
+	h2 {
+		padding-bottom: 2em;
+	}
+	&__grid {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+	}
+}
+
+.last {
+	padding: 2em 0;
+	background-color: burlywood;
+
+	border: 2px solid black;
+	&__link {
+		width: 10vw;
+		margin: 0 auto;
+
+		border: 2px solid black;
+
+		text-align: center;
+	}
+}

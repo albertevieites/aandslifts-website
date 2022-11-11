@@ -21,7 +21,7 @@ export default function Navbar() {
 						<a href='#services'>OUR SERVICES</a>
 					</li>
 					<li>
-						<a href='#ftex'>FTEX 22</a>
+						<a href='#ftex'>LIFTEX 22</a>
 					</li>
 				</ul>
 			</nav>

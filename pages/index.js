@@ -11,11 +11,12 @@ export default function Home() {
 		<>
 			{/* HERO SECTION 🚀 */}
 			<section className='hero'>
-				<h1>Leading solutions in lift maintenance</h1>
+				<h1>Leading solutions for the <span>lift</span> industry</h1>
 				<p>
 					We offer a wide range of products and services to maintain your lift
 					in the best condition.
 				</p>
+				<Link className='hero__link' href='/products'>Our Products</Link>
 			</section>
 
 			{/* PARTNERS SECTION */}
