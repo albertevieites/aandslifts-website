@@ -1,3 +1,31 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
 .team__card {
   width: 25vw;
+
+  img {
+    width: 13em;
+    height: auto;
+    padding-top: 1em;
+    background-color: $clr-goldweb;
+    border-radius: .7rem;
+  }
+
+  h4 {
+    padding-top: 1em;
+    padding-bottom: .3em;
+    font-size: $f-s-440;
+    font-weight: $f-w-600;
+    color: $clr-goldweb;
+  }
+
+  p {
+		width: 17vw;
+
+		font-family: "Roboto", sans-serif;
+		font-size: $f-s-340;
+		font-weight: $f-w-300;
+		letter-spacing: .02rem;
+	}
 }

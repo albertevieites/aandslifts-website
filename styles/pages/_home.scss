@@ -117,18 +117,27 @@
 
 		font-weight: $f-w-600;
 	}
+
+	p {
+		font-family: "Roboto", sans-serif;
+		font-weight: $f-w-300;
+		letter-spacing: .02rem;
+	}
 }
 
 // TEAM SECTION
 .team {
 	padding: 5em 2em;
-
 	border: 2px solid grey;
 
 	color: white;
+
 	h2 {
-		padding-bottom: 2em;
+		margin-bottom: 1em;
+
+		font-weight: $f-w-600;
 	}
+
 	&__grid {
 		display: flex;
 		justify-content: center;
