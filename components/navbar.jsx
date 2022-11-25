@@ -15,17 +15,17 @@ export default function Navbar() {
 			<nav className='navbar__nav'>
 				<ul className='navbar__list'>
 					<li>
-						<a href='#story'> OUR STORY</a>
+						<a href='#story'>OUR STORY</a>
 					</li>
 					<li>
 						<a href='#services'>OUR SERVICES</a>
 					</li>
 					<li>
-						<a href='#ftex'>LIFTEX 22</a>
+						<a href='#ftex'>OUR EVENTS</a>
 					</li>
 				</ul>
 			</nav>
-			<Link className='products__link' href='/products'>Our Products</Link>
+			<Link className='navbar__btn' href='/contact'><span>CONTACT US</span></Link>
 		</div>
 	);
 }

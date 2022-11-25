@@ -1,16 +1,18 @@
 @use '../abstracts/colors' as *;
 @use '../abstracts/fonts' as *;
 
+// HERO SECTION
 .hero {
-	padding: 5em 2em;
-	background-color: mediumorchid;
+	padding: 17em 2em;
 
-	border: 2px solid black;
+	border: 2px solid grey;
+
+	color: $clr-white;
 
   h1{
     padding-bottom: 1em;
-    font-size: $f-s-800;
-    font-weight: $f-w-600;
+    font-size: $f-s-1200;
+    font-weight: $f-w-700;
   }
 
   p {
@@ -20,15 +22,32 @@
 	span {
 		color: $clr-goldweb;
 	}
-  &__link {
-    width: 8em;
 
-    text-align: center;
-    
-    border: 2px solid black;
+	&__message {
+		width: 30%;
+	}
+  &__btn {
+		display: inline;
+
+		padding: .4em .7em;
+		background-color: $clr-goldweb;
+		border-radius: .2rem;
+
+		span {
+			font-size: $f-s-340;
+			font-weight: $f-w-800;
+			color: $clr-background;
+		}
+		span:hover {
+			color: $clr-goldweb;
+		}
   }
+	&__btn:hover {
+		background-color: $clr-background;
+	}
 }
 
+// PARTNERS SECTION
 .partners {
 	display: flex;
 	justify-content: center;
