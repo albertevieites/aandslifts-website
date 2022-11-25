@@ -1,12 +1,21 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 0 2em;
-  background-color: mediumseagreen;
+  border: 2px solid grey;
 
-  border: 2px solid black;
+  color: $clr-white;
+
+  a {
+    font-size: $f-s-380;
+    font-weight: $f-w-500;
+  }
+
   &__brand {
     width: 7vw;
   }
@@ -14,8 +23,18 @@
     display: flex;
     gap: 2em;
   }
-}
+  &__btn {
+    padding: .4em .7em;
+    background-color: $clr-light-grey;
+    border-radius: 0.2rem;
 
-.products__link {
-  border: 2px solid black;
+    span {
+      font-size: $f-s-340;
+      font-weight: $f-w-800;
+      color: $clr-background;
+    }
+  }
+  &__btn:hover {
+    background-color: $clr-goldweb;
+  }
 }
