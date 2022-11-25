@@ -17,6 +17,12 @@
 
   p {
     padding-bottom: 2em;
+
+		font-size: $f-s-440;
+		letter-spacing: .02rem;
+		span {
+			font-weight: $f-w-600;
+		}
   }
 
 	span {
@@ -50,34 +56,47 @@
 // PARTNERS SECTION
 .partners {
 	display: flex;
-	justify-content: center;
 
 	padding: 1em 0;
-	background-color: aliceblue;
+	background-color: $clr-white;
 
-	border: 2px solid black;
+	border: 2px solid grey;
 	&__container {
-		display: flex;
-		align-items: center;
-		gap: 2em;
+		margin: 0 auto;
+		padding: 2em 0;
+		img {
+			width: 20vw;
+			height: auto;
+			margin-bottom: 0.2em;
+		}
 	}
 }
 
+// FEATURE SECTION
 .features {
 	padding: 5em 2em;
-	background-color: navajowhite;
+	border: 2px solid grey;
 
-	border: 2px solid black;
+	color: $clr-white;
+	h2 {
+		margin-bottom: 1em;
+
+		font-weight: $f-w-600;
+	}
 }
 
+// SOCIAL SECTION
 .social {
 	padding: 5em 2em;
-	background-color: mediumturquoise;
+	border: 2px solid grey;
 
-	border: 2px solid black;
+	color: $clr-white;
 
 	h2 {
-		margin-bottom: 2em;
+		margin-bottom: 1em;
+
+		font-weight: $f-w-600;
+		text-align: center;
 	}
 	&__grid {
 		display: flex;
@@ -86,25 +105,25 @@
 	}
 }
 
-.faq {
-	padding: 5em 2em;
-	background-color: plum;
-
-	border: 2px solid black;
-}
-
+// STORY SECTION
 .story {
 	padding: 5em 2em;
-	background-color: honeydew;
+	border: 2px solid grey;
 
-	border: 2px solid black;
+	color: $clr-white;
+
+	h2 {
+		margin-bottom: 1em;
+
+		font-weight: $f-w-600;
+	}
 }
 
+// TEAM SECTION
 .team {
 	padding: 5em 2em;
-	background-color: darkslategray;
 
-	border: 2px solid black;
+	border: 2px solid grey;
 
 	color: white;
 	h2 {

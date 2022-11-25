@@ -1,5 +1,5 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<circle cx="100" cy="100" r="100" fill="#CD984D"/>
+<circle cx="100" cy="100" r="100" fill="#FFD700"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M167 25.7628V174.237C149.269 190.25 125.773 200 100 200C74.227 200 50.7313 190.25 33 174.237V25.7628C41.7838 17.8303 51.9823 11.4347 63.1715 7H136.829C148.018 11.4347 158.216 17.8303 167 25.7628Z" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
