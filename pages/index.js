@@ -97,9 +97,17 @@ export default function Home() {
 
 			{/* LAST */}
 			<section className='last'>
-				<Link className='last__link' href='/products'>
-					Our Products
-				</Link>
+				<div className='last__container'>
+					<h2>Bulletproof your lift</h2>
+					<h2>for the future</h2>
+					<p>
+						Join thousands of people buying lift sutff over the world while see
+						their smilie faces
+					</p>
+					<Link className='last__btn' href='/products'>
+						<span>OUR PRODUCTS</span>
+					</Link>
+				</div>
 			</section>
 		</>
 	);

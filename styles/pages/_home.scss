@@ -5,25 +5,27 @@
 .hero {
 	padding: 17em 2em;
 
-	border: 2px solid grey;
+	background-image: url("../../public/images/assets/pattern.png");
+	background-size: 100%;
+	background-position: center;
 
 	color: $clr-white;
 
-  h1{
-    padding-bottom: 1em;
-    font-size: $f-s-1200;
-    font-weight: $f-w-700;
-  }
+	h1 {
+		padding-bottom: 1em;
+		font-size: $f-s-1200;
+		font-weight: $f-w-700;
+	}
 
-  p {
-    padding-bottom: 2em;
+	p {
+		padding-bottom: 2em;
 
 		font-size: $f-s-440;
-		letter-spacing: .02rem;
+		letter-spacing: 0.02rem;
 		span {
 			font-weight: $f-w-600;
 		}
-  }
+	}
 
 	span {
 		color: $clr-goldweb;
@@ -32,12 +34,12 @@
 	&__message {
 		width: 30%;
 	}
-  &__btn {
+	&__btn {
 		display: inline;
 
-		padding: .4em .7em;
+		padding: 0.4em 0.7em;
 		background-color: $clr-goldweb;
-		border-radius: .2rem;
+		border-radius: 0.2rem;
 
 		span {
 			font-size: $f-s-340;
@@ -47,7 +49,7 @@
 		span:hover {
 			color: $clr-goldweb;
 		}
-  }
+	}
 	&__btn:hover {
 		background-color: $clr-background;
 	}
@@ -60,7 +62,6 @@
 	padding: 1em 0;
 	background-color: $clr-white;
 
-	border: 2px solid grey;
 	&__container {
 		margin: 0 auto;
 		padding: 2em 0;
@@ -75,7 +76,6 @@
 // FEATURE SECTION
 .features {
 	padding: 5em 2em;
-	border: 2px solid grey;
 
 	color: $clr-white;
 	h2 {
@@ -88,7 +88,6 @@
 // SOCIAL SECTION
 .social {
 	padding: 5em 2em;
-	border: 2px solid grey;
 
 	color: $clr-white;
 
@@ -108,7 +107,6 @@
 // STORY SECTION
 .story {
 	padding: 5em 2em;
-	border: 2px solid grey;
 
 	color: $clr-white;
 
@@ -119,16 +117,15 @@
 	}
 
 	p {
-		font-family: "Roboto", sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-weight: $f-w-300;
-		letter-spacing: .02rem;
+		letter-spacing: 0.02rem;
 	}
 }
 
 // TEAM SECTION
 .team {
 	padding: 5em 2em;
-	border: 2px solid grey;
 
 	color: white;
 
@@ -145,17 +142,64 @@
 	}
 }
 
+// LAST CALL TO ACTION SECTION
 .last {
 	padding: 2em 0;
-	background-color: burlywood;
 
-	border: 2px solid black;
-	&__link {
-		width: 10vw;
+	color: $clr-white;
+
+	h2 {
+		font-size: $f-s-700;
+		font-weight: $f-w-600;
+		text-align: center;
+	}
+
+	p {
+		width: 28vw;
 		margin: 0 auto;
+		padding-top: 1.3em;
+		padding-bottom: 2em;
 
-		border: 2px solid black;
+		font-family: 'Roboto', sans-serif;
+		font-size: $f-s-380;
+		font-weight: $f-w-300;
+		text-align: center;
+		line-height: 1.3em;
+	}
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 2em;
+		background-color: $clr-card;
+		border-radius: .7rem;
+	}
+
+	&__container > h2 {
+		padding-bottom: .3em;
+	}
+
+	&__btn {
+		width: 13em;
+		margin: 0 auto;
+		padding: 0.5em 0.9em;
+		background-color: $clr-goldweb;
+		border-radius: 0.2rem;
 
 		text-align: center;
+
+		span {
+			font-size: $f-s-340;
+			font-weight: $f-w-800;
+			color: $clr-background;
+			text-align: center;
+		}
+		span:hover {
+			color: $clr-goldweb;
+		}
+	}
+
+	&__btn:hover {
+		background-color: $clr-background;
 	}
 }
