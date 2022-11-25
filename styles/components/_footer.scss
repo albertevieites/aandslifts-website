@@ -1,8 +1,99 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
 .footer {
-  padding: 1em 0;
-  background-color: tomato;
+	display: flex;
+	justify-content: space-between;
 
-  border: 2px solid black;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2em 0;
 
-  text-align: center;
+	color: $clr-white;
+	text-align: center;
+
+	&__here {
+		padding-top: 2em;
+
+		text-align: left;
+
+		h2 {
+			font-weight: $f-w-600;
+			padding-bottom: 1.3em;
+		}
+
+		p {
+			font-family: 'Roboto', sans-serif;
+			font-size: $f-s-300;
+			font-weight: $f-w-300;
+		}
+	}
+
+	&__talk {
+		padding-top: 2em;
+
+		text-align: left;
+
+		h2 {
+			font-weight: $f-w-600;
+			padding-bottom: 1.3em;
+		}
+	}
+
+	&__email {
+    padding-bottom: 1em;
+
+		font-family: 'Roboto', sans-serif;
+		font-size: $f-s-300;
+		font-weight: $f-w-400;
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: column;
+		gap: .5em;
+
+    padding-bottom: 4em;
+
+		a {
+			background-color: $clr-goldweb;
+      border-radius: .2rem;
+
+      text-align: center;
+			color: $clr-background;
+      span {
+        font-size: $f-s-300;
+        font-weight: $f-w-600;
+      }
+		}
+	}
+
+  &__social {
+    span {
+      font-family: "Roboto", sans-serif;
+      font-size: $f-s-340;
+    }
+  }
+	&__icons {
+		display: flex;
+    gap: 1em;
+	}
+
+  &__sitemap {
+    padding-top: 2em;
+
+    text-align: left;
+
+    a {
+      font-size: $f-s-340;
+    }
+  }
+
+  &__links {
+    padding-bottom: 3em;
+  }
+
+  &__copy {
+    font-size: $f-s-340;
+  }
 }
