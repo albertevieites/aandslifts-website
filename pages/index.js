@@ -1,76 +1,105 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import Image from "next/image";
-import nayarLogo from "../public/icons/nayar-white.jpeg";
+import Image from 'next/image';
+import nayarLogo from '../public/icons/nayar-white.jpeg';
 
-import SocialCard from "../components/socialCard";
-import TeamCard from "../components/teamCard";
+import SocialCard from '../components/socialCard';
+import TeamCard from '../components/teamCard';
 
 export default function Home() {
 	return (
 		<>
-		{/* A&S address for Google Maps */}
-		{/* 51.5378089830618, -0.7068501217028575 */}
+			{/* A&S address for Google Maps */}
+			{/* 51.5378089830618, -0.7068501217028575 */}
 
 			{/* HERO SECTION 🚀 */}
 			<section className='hero'>
-				<div className="hero__message">
+				<div className='hero__message'>
 					<h1>Leading</h1>
 					<h1>solutions for</h1>
-					<h1>the <span>lift</span> industry</h1>
+					<h1>
+						the <span>lift</span> industry
+					</h1>
 					<p>
-						We offer a wide range of products and services to maintain your lift
+						We offer a wide range of <span>products</span> and services to
+						maintain your <span>lift </span>
 						in the best condition.
 					</p>
 				</div>
-				<Link className='hero__btn' href='/products'><span>OUR PRODUCTS</span></Link>
+				<Link className='hero__btn' href='/products'>
+					<span>OUR PRODUCTS</span>
+				</Link>
 			</section>
 
 			{/* PARTNERS SECTION */}
 			<section className='partners'>
-				<div className="partners__container">
-					<Image
-						src={nayarLogo}
-						alt="Nayar Logo"
-					/>
-					<span>Nayar UK representatives</span>
+				<div className='partners__container'>
+					<Link
+						className='partners__link'
+						href='https://www.nayarsystems.com/en/'
+					>
+						<Image src={nayarLogo} alt='Nayar Logo' />
+						<span>Nayar UK representatives</span>
+					</Link>
 				</div>
 			</section>
 
 			{/* FEATURES & BENEFITS */}
-			<section className="features">
+			<section className='features'>
 				<h2>Features & Benefits</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima atque similique natus, nihil neque et molestiae expedita voluptates fugiat earum culpa consectetur dolorum eum optio corrupti exercitationem ipsa tempore.</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minima
+					atque similique natus, nihil neque et molestiae expedita voluptates
+					fugiat earum culpa consectetur dolorum eum optio corrupti
+					exercitationem ipsa tempore.
+				</p>
 			</section>
 
 			{/* SOCIAL PROOF */}
-			<section className="social">
-				<h2>Social Proof</h2>
-				<SocialCard />
-			</section>
-
-			{/* FAQ */}
-			<section className="faq">
-				<h2>FAQ</h2>
-				<h3>Question</h3>
-				<p>Answer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt hic aspernatur aut molestiae molestias corporis minus quam officia repellat delectus voluptatibus, quibusdam qui error recusandae, fugit doloremque modi totam.</p>
+			<section className='social'>
+				<h2>We are Social</h2>
+				<div className='social__grid'>
+					<SocialCard className='social__card' />
+				</div>
 			</section>
 
 			{/* OUR STORY */}
-			<section id="story" className="story">
+			<section id='story' className='story'>
 				<h2>Our Story (so far...)</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam non aspernatur corrupti sed aliquid inventore possimus laboriosam quae, placeat dolorum nulla consequatur facilis officiis veniam harum vitae necessitatibus in quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non culpa explicabo obcaecati facere, eius, possimus ab reiciendis odio aliquid in eos officiis adipisci animi ipsam soluta voluptatum, reprehenderit iure?</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam non
+					aspernatur corrupti sed aliquid inventore possimus laboriosam quae,
+					placeat dolorum nulla consequatur facilis officiis veniam harum vitae
+					necessitatibus in quidem. Lorem ipsum dolor sit amet consectetur
+					adipisicing elit.
+				</p>
+				<br />
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+					saepe aspernatur architecto qui necessitatibus sapiente modi numquam?
+					Nisi excepturi, vitae nulla velit suscipit officia necessitatibus cum,
+					incidunt enim, nesciunt maiores!
+				</p>
+				<br />
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cumque
+					doloremque error quae omnis dolorem ipsa impedit minima maiores
+					expedita! Sapiente reprehenderit necessitatibus consectetur aperiam
+					officia possimus animi, ut laboriosam.
+				</p>
 			</section>
 
 			{/* TEAM */}
-			<section className="team">
+			<section className='team'>
 				<h2>The Team</h2>
 				<TeamCard />
 			</section>
 
 			{/* LAST */}
-			<section className="last">
-				<Link className="last__link" href='/products'>Our Products</Link>
+			<section className='last'>
+				<Link className='last__link' href='/products'>
+					Our Products
+				</Link>
 			</section>
 		</>
 	);
