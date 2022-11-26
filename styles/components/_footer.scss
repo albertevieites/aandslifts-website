@@ -12,6 +12,13 @@
 	color: $clr-white;
 	text-align: center;
 
+	&__image {
+		img {
+			width: 37vw;
+			height: auto;
+		}
+	}
+
 	&__here {
 		padding-top: 2em;
 
@@ -53,7 +60,7 @@
 		flex-direction: column;
 		gap: .5em;
 
-    padding-bottom: 4em;
+    padding-bottom: 5em;
 
 		a {
 			background-color: $clr-goldweb;
@@ -77,6 +84,10 @@
 	&__icons {
 		display: flex;
     gap: 1em;
+
+		img {
+			width: 70%;
+		}
 	}
 
   &__sitemap {
@@ -90,7 +101,7 @@
   }
 
   &__links {
-    padding-bottom: 3em;
+    padding-bottom: 5em;
   }
 
   &__copy {
