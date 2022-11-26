@@ -3,7 +3,7 @@
 
 // HERO SECTION
 .hero {
-	padding: 17em 2em;
+	padding: 17em 3.5em;
 
 	background-image: url("../../public/images/assets/pattern.png");
 	background-size: 100%;
@@ -13,7 +13,7 @@
 
 	h1 {
 		padding-bottom: 1em;
-		font-size: $f-s-1200;
+		font-size: $f-s-1700;
 		font-weight: $f-w-700;
 	}
 
@@ -32,7 +32,7 @@
 	}
 
 	&__message {
-		width: 30%;
+		width: 50%;
 	}
 	&__btn {
 		display: inline;
@@ -75,25 +75,31 @@
 
 // FEATURE SECTION
 .features {
-	padding: 5em 2em;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5em 0;
 
 	color: $clr-white;
 	h2 {
 		margin-bottom: 1em;
 
+		font-size: $f-s-700;
 		font-weight: $f-w-600;
 	}
 }
 
 // SOCIAL SECTION
 .social {
-	padding: 5em 2em;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5em 0;
 
 	color: $clr-white;
 
 	h2 {
 		margin-bottom: 1em;
 
+		font-size: $f-s-700;
 		font-weight: $f-w-600;
 		text-align: center;
 	}
@@ -106,13 +112,16 @@
 
 // STORY SECTION
 .story {
-	padding: 5em 2em;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5em 0;
 
 	color: $clr-white;
 
 	h2 {
 		margin-bottom: 1em;
 
+		font-size: $f-s-700;
 		font-weight: $f-w-600;
 	}
 
@@ -125,13 +134,16 @@
 
 // TEAM SECTION
 .team {
-	padding: 5em 2em;
+	width: 90%;
+	margin: 0 auto;
+	padding: 5em 0;
 
 	color: white;
 
 	h2 {
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 
+		font-size: $f-s-700;
 		font-weight: $f-w-600;
 	}
 
