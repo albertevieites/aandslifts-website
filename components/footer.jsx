@@ -1,16 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import mapPic from '../public/images/assets/map.png';
+import googleIcon from '../public/icons/google.svg';
+import facebookIcon from '../public/icons/facebook.svg';
+import linkedinIcon from '../public/icons/linkedin.svg';
+
 export default function Footer() {
 	return (
 		<div className='footer'>
 			<div className='footer__image'>
 				<Image
 					className='footer__map'
-					src='/./images/assets/map.png'
+					src={mapPic}
 					alt='map'
-					width={400}
-					height={300}
 				/>
 			</div>
 
@@ -38,28 +41,22 @@ export default function Footer() {
 						<Link href='https://goo.gl/maps/JeoGgA34CGTzHfs8A'>
 							<Image
 								className='footer__google'
-								src='/./icons/google.svg'
+								src={googleIcon}
 								alt='google icon'
-								width={15}
-								height={15}
 							/>
 						</Link>
 						<Link href='https://www.facebook.com/people/AS-Lifts/100055158621181/'>
 							<Image
 								className='footer__facebook'
-								src='/./icons/facebook.svg'
+								src={facebookIcon}
 								alt='facebook icon'
-								width={15}
-								height={15}
 							/>
 						</Link>
 						<Link href='https://www.linkedin.com/in/a-and-s-lifts-ltd-%F0%9F%9B%97-34a5a91a5/'>
 							<Image
 								className='footer__linkedin'
-								src='/./icons/linkedin.svg'
+								src={linkedinIcon}
 								alt='linkedin icon'
-								width={15}
-								height={15}
 							/>
 						</Link>
 					</div>
