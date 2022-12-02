@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import Image from 'next/image';
-import brandLogo from '../public/icons/aands.svg';
+import brandLogo from '../../public/icons/aands.svg';
 
 export default function Navbar() {
 	return (

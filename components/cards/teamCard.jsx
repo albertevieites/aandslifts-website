@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { teamData } from '../data/team';
+import { teamData } from '../../data/team';
 
 export default function TeamCard() {
 	return (
@@ -9,12 +9,12 @@ export default function TeamCard() {
 				return (
 					<div key={key} className='team__card'>
 						<Image
-              className='team__image'
-              src={data.img}
-              alt={data.alt}
-              width={100}
-              height={100}
-            />
+							className='team__image'
+							src={data.img}
+							alt={data.alt}
+							width={150}
+							height={150}
+						/>
 						<h4 className='team__name'>{data.name}</h4>
 						<p>{data.description}</p>
 					</div>
