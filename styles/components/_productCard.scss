@@ -1,0 +1,49 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/fonts' as *;
+
+.product--card {
+  width: 23vw;
+  margin:  0 auto;
+  padding: 2em;
+  background-color: $clr-card;
+  border-radius: .7rem;
+
+  color: $clr-white;
+
+  h3 {
+    padding-bottom: .7em;
+
+    font-size: $f-s-440;
+    font-weight: $f-w-600;
+  }
+  p {
+    padding-bottom: 2em;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: $f-s-300;
+    font-weight: $f-w-300;
+    letter-spacing: .03em;
+    line-height: 1.3em;
+  }
+  button {
+    padding: .7em;
+    background-color: $clr-goldweb;
+    border-radius: .2rem;
+
+    font-size: $f-s-300;
+    font-weight: $f-w-600;
+    color: $clr-background;
+  }
+  &__image--container {
+    width: 100%;
+    margin-bottom: 1em;
+    border-bottom: .1em solid $clr-goldweb;
+    img {
+      object-fit: contain;
+      width: 100%;
+      // height: unset;
+      margin: 1em auto;
+      padding-bottom: 1em;
+    }
+  }
+}

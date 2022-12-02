@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import nayarLogo from '../public/icons/nayar-white.jpeg';
 
-import SocialCard from '../components/socialCard';
-import TeamCard from '../components/teamCard';
+import SocialCard from '../components/cards/socialCard';
+import TeamCard from '../components/cards/teamCard';
 
 export default function Home() {
 	return (

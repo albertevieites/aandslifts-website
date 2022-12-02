@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { socialData } from '../data/social';
+import { socialData } from '../../data/social';
 
 export default function SocialCard() {
 	return (
@@ -8,7 +8,6 @@ export default function SocialCard() {
 			{socialData.map((data, key) => {
 				return (
 					<div key={key} className='social__card'>
-
 						<div className='social__comment'>
 							<Image
 								className='social__quote'
@@ -21,7 +20,7 @@ export default function SocialCard() {
 						</div>
 
 						<div className='social__user'>
-							<div className="social__user--persona">
+							<div className='social__user--persona'>
 								<Image
 									className='social__image'
 									src={data.img}
@@ -32,7 +31,7 @@ export default function SocialCard() {
 								<h5 className='social__name'>{data.name}</h5>
 							</div>
 
-							<div className="social__user--social">
+							<div className='social__user--social'>
 								<Image
 									src={data.socialImg}
 									alt='google icon'
@@ -47,7 +46,6 @@ export default function SocialCard() {
 								/>
 							</div>
 						</div>
-
 					</div>
 				);
 			})}

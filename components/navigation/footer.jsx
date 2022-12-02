@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import mapPic from '../public/images/assets/map.png';
-import googleIcon from '../public/icons/google.svg';
-import facebookIcon from '../public/icons/facebook.svg';
-import linkedinIcon from '../public/icons/linkedin.svg';
+import mapPic from '../../public/images/assets/map.png';
+import googleIcon from '../../public/icons/google.svg';
+import facebookIcon from '../../public/icons/facebook.svg';
+import linkedinIcon from '../../public/icons/linkedin.svg';
 
 export default function Footer() {
 	return (
