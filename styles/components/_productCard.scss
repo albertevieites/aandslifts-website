@@ -2,9 +2,9 @@
 @use '../abstracts/fonts' as *;
 
 .product--card {
-  width: 23vw;
-  margin:  0 auto;
-  padding: 2em;
+  width: 13em;
+  margin:  2em auto;
+  padding: 1.5em;
   background-color: $clr-card;
   border-radius: .7rem;
 
@@ -13,7 +13,7 @@
   h3 {
     padding-bottom: .7em;
 
-    font-size: $f-s-440;
+    font-size: $f-s-400;
     font-weight: $f-w-600;
   }
   p {
@@ -43,7 +43,6 @@
       width: 100%;
       // height: unset;
       margin: 1em auto;
-      padding-bottom: 1em;
     }
   }
 }

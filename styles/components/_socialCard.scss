@@ -2,11 +2,6 @@
 @use '../abstracts/fonts' as *;
 
 .social {
-	p {
-		white-space: pre-line;
-		vertical-align: bottom;
-	}
-
 	&__card {
 		display: flex;
 		flex-direction: column;
@@ -17,9 +12,23 @@
 		padding: 2em;
 		background-color: $clr-card;
 		border-radius: 0.7rem;
+		&--paragraph::before {
+			position: absolute;
+			left: -1.7rem;
+
+			content: open-quote;
+			font-size: 2.9rem;
+			font-family: serif;
+		}
+		&--paragraph::after {
+			content: close-quote;
+			font-size: 0rem;
+		}
 	}
 
 	&__comment {
+		position: relative;
+
 		display: flex;
 
 		img {
