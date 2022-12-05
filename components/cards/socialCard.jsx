@@ -9,14 +9,14 @@ export default function SocialCard() {
 				return (
 					<div key={key} className='social__card'>
 						<div className='social__comment'>
-							<Image
+							{/* <Image
 								className='social__quote'
-								src='/../icons/quote.svg'
-								alt='quote'
+								// src='/../icons/quote.svg'
+								// alt='quote'
 								width={20}
 								height={20}
-							/>
-							<p>{data.comment}</p>
+							/> */}
+							<p className='social__card--paragraph'>{data.comment}</p>
 						</div>
 
 						<div className='social__user'>

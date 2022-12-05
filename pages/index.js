@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import Image from 'next/image';
-import nayarLogo from '../public/icons/nayar-white.jpeg';
+import nayarLogo from '../public/icons/nayar.svg';
 
 import SocialCard from '../components/cards/socialCard';
 import TeamCard from '../components/cards/teamCard';
