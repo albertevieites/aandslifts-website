@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import { productData } from '../../data/products';
 
-import ProductDetails from './productDetails';
+// import ProductDetails from './productDetails';
 
 const ProductCard = () => {
-	const [expand, setExpand] = useState(null);
+	// const [expand, setExpand] = useState(null);
 	return (
 		<>
 			{productData.map((product, key) => {
@@ -27,7 +27,7 @@ const ProductCard = () => {
 					</div>
 				);
 			})}
-      {expand && <ProductDetails />}
+      {/* {expand && <ProductDetails />} */}
 		</>
 	);
 };
